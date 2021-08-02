@@ -43,6 +43,11 @@ endif
 let g:NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
 
+" Shift is two spaces
+:set shiftwidth=2
+:set autoindent
+:set smartindent
+:set tabstop=2
 syntax on " Enable syntax highlighting
 :set cursorline
 colorscheme molokai
@@ -56,7 +61,9 @@ noremap <C-J> <C-W>j
 noremap <C-K> <C-W>k
 noremap <C-H> <C-W>h
 noremap <C-L> <C-W>l
+
 nmap <F2> :NERDTreeToggle<CR>
+
 :set clipboard=unnamedplus
 let g:rehash256 = 1
 let g:loaded_matchparen=1
@@ -81,3 +88,4 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
