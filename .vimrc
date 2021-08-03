@@ -6,19 +6,14 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Bundle 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails' 
-Plugin 'tpope/vim-endwise'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
-Plugin 'crusoexia/vim-monokai'
 Plugin 'tomasr/molokai'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dense-analysis/ale'
-Plugin 'vieira/vim-javascript'
-Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'neoclide/coc.nvim'
+Plugin 'nvim-treesitter/nvim-treesitter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
